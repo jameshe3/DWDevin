@@ -3,8 +3,8 @@
 ## Steps
 1. Created deployment with:
    - ProjectId: 257880
-   - Name: etl_pipeline_deployment
-   - Description: ETL Pipeline with Extract, Transform, Load nodes
+   - Type: NORMAL
+   - ObjectIds: [workflow_id]
 
 2. Deployment Response:
 ```json
@@ -16,3 +16,7 @@
 
 ```
 
+## Verification
+- Status should be 'Success'
+- All stages should complete successfully
+- No error messages in response
