@@ -283,3 +283,61 @@
 	},
 	"RequestId": "554F7822-4C6E-5D69-B02D-1C9201B60121"
 }
+{
+	"Pipeline": {
+		"CreateTime": 1739026825000,
+		"Creator": "200527038829996354",
+		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+		"Message": "",
+		"ModifyTime": 1739027476000,
+		"ProjectId": 257880,
+		"Stages": [
+			{
+				"Code": "BUILD_PACKAGE",
+				"Description": "发布包构建",
+				"Detail": {
+					"checkerList": [
+						{
+							"code": "BuildPackageChecker",
+							"name": "打包检查"
+						},
+						{
+							"code": "NodeParentDependency",
+							"name": "下游依赖检查"
+						},
+						{
+							"code": "NodeInProcess",
+							"name": "下线中流程检查"
+						}
+					]
+				},
+				"Message": "",
+				"Name": "发布包构建",
+				"Status": "Success",
+				"Step": 1,
+				"Type": "Build"
+			},
+			{
+				"Code": "PROD_CHECK",
+				"Description": "生产检查器",
+				"Detail": {},
+				"Message": "",
+				"Name": "生产检查器",
+				"Status": "Success",
+				"Step": 2,
+				"Type": "Check"
+			},
+			{
+				"Code": "PROD",
+				"Description": "发布到生产环境",
+				"Detail": {},
+				"Name": "发布到生产环境",
+				"Status": "Init",
+				"Step": 3,
+				"Type": "Deploy"
+			}
+		],
+		"Status": "Running"
+	},
+	"RequestId": "E19B5699-0082-58B4-86F7-E16A968BF93A"
+}
