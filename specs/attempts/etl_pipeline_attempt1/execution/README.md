@@ -1,6 +1,11 @@
 # Workflow Instance Creation and Execution
 
-## 1. Create Workflow Instances
+## 1. Get Workflow Nodes
+```json
+
+```
+
+## 2. Create Workflow Instances
 ```bash
 # Command used:
 aliyun dataworks-public \
@@ -13,6 +18,7 @@ CreateWorkflowInstances \
     "Blocked": false
   },
   "Parallelism": 1,
+  "RootTaskIds": [1023697426],
   "Mode": "AllDownstream"
 }' \
 --EnvType Prod \
@@ -29,5 +35,8 @@ CreateWorkflowInstances \
 
 # Response:
 ```json
-
+{
+	"OperationId": "997ba921-f8a4-4704-85f6-f4a032c8b1c2",
+	"RequestId": "22DFE310-8CAD-5BA7-B71A-32B8C4C8B7D7"
+}
 ```
