@@ -1,0 +1,15 @@
+{
+    "ProjectId": 257880,
+    "WorkflowId": "{workflow_id}",
+    "Name": "etl_pipeline_run1",
+    "Type": "ManualWorkflow",
+    "EnvType": "Prod",
+    "DefaultRunProperties": {
+        "Analysis": {
+            "Enabled": false,
+            "Blocked": false
+        },
+        "Parallelism": 1,
+        "Mode": "AllDownstream"
+    }
+}
