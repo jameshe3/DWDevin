@@ -1,0 +1,13 @@
+Alibaba Cloud Command Line Interface Version 3.0.251
+
+Product: dataworks-public ()
+
+Parameters:
+  --[1;30m[0m[1;30mProjectId[0m Long    Required
+
+  
+
+  --[1;30m[0m[1;30mSpec[0m String  Required
+
+  
+
