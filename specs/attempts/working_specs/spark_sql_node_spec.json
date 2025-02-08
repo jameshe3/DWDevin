@@ -16,7 +16,7 @@
                 },
                 "script": {
                     "language": "spark-sql",
-                    "path": "devinTestSparkSQL18/sparksql_insert",
+                    "path": "{workflow_name}/sparksql_insert",
                     "runtime": {
                         "command": "EMR_SPARK_SQL",
                         "commandTypeId": 229,
@@ -29,7 +29,7 @@
                         },
                         "cu": "0.25"
                     },
-                    "content": "INSERT INTO employees VALUES (19, 'John Doe', 'Engineering', 75000.0);"
+                    "content": "{sql_statement}"
                 },
                 "name": "sparksql_insert",
                 "owner": "200527038829996354",

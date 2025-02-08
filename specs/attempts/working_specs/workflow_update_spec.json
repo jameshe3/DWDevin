@@ -2,20 +2,20 @@
     "version": "1.1.0",
     "kind": "CycleWorkflow",
     "spec": {
-        "name": "devinTestSparkSQL18",
+        "name": "{workflow_name}",
         "id": "{workflow_id}",
         "type": "CycleWorkflow",
         "owner": "200527038829996354",
         "workflows": [
             {
                 "script": {
-                    "path": "devinTestSparkSQL18",
+                    "path": "{workflow_name}",
                     "runtime": {
                         "command": "WORKFLOW"
                     }
                 },
                 "id": "{workflow_id}",
-                "name": "devinTestSparkSQL18",
+                "name": "{workflow_name}",
                 "owner": "200527038829996354",
                 "dependencies": [
                     {

@@ -1,15 +1,15 @@
 {
   "script": {
-    "path": "devinTestSparkSQL5",
+    "path": "devinTestSparkSQL18",
     "runtime": {
       "command": "WORKFLOW"
     },
-    "id": "7504544777058887537"
+    "id": "4870267963116273067"
   },
-  "id": "4641162278948073001",
+  "id": "4924731678360223412",
   "trigger": {
     "type": "Scheduler",
-    "id": "6385929946150746326",
+    "id": "7363567887531767479",
     "cron": "00 00 00 * * ?",
     "startTime": "1970-01-01 00:00:00",
     "endTime": "9999-01-01 00:00:00",
@@ -25,13 +25,12 @@
     "failureStrategy": "Break",
     "recurrenceType": "Normal"
   },
-  "name": "devinTestSparkSQL5",
+  "name": "devinTestSparkSQL18",
   "owner": "200527038829996354",
   "citable": false,
   "metadata": {
     "owner": "200527038829996354",
     "ownerName": "荆杭",
-    "schedulerNodeId": 1023696351,
     "tenantId": "528666525984994",
     "project": {
       "defaultDiResourceGroupIdentifier": "group_528666525984994",
@@ -57,15 +56,15 @@
   "outputs": {
     "nodeOutputs": [
       {
-        "data": "4641162278948073001",
+        "data": "4924731678360223412",
         "artifactType": "NodeOutput",
-        "refTableName": "devinTestSparkSQL5",
+        "refTableName": "devinTestSparkSQL18",
         "isDefault": true
       },
       {
-        "data": "devin2.devinTestSparkSQL5",
+        "data": "devin2.devinTestSparkSQL18",
         "artifactType": "NodeOutput",
-        "refTableName": "devinTestSparkSQL5",
+        "refTableName": "devinTestSparkSQL18",
         "isDefault": false
       }
     ]
@@ -73,26 +72,26 @@
   "nodes": [
     {
       "recurrence": "Normal",
-      "id": "6239169799742358397",
+      "id": "5218542039612961643",
       "timeout": 0,
       "instanceMode": "T+1",
       "rerunMode": "Allowed",
       "rerunTimes": 3,
       "rerunInterval": 180000,
       "script": {
-        "path": "devinTestSparkSQL5/startnode",
+        "path": "devinTestSparkSQL18/startnode",
         "runtime": {
           "command": "VIRTUAL",
           "commandTypeId": 99,
           "cu": "0"
         },
         "content": "",
-        "id": "5727266778117543744"
+        "id": "8659848503903579005"
       },
       "trigger": {
         "type": "Scheduler",
-        "id": "8824388596562629922",
-        "cron": "00 18 00 * * ?",
+        "id": "7330013786960821857",
+        "cron": "00 23 00 * * ?",
         "startTime": "1970-01-01 00:00:00",
         "endTime": "9999-01-01 00:00:00",
         "timezone": "Asia/Shanghai",
@@ -109,11 +108,10 @@
         "owner": "200527038829996354",
         "container": {
           "type": "Flow",
-          "uuid": "4641162278948073001"
+          "uuid": "4924731678360223412"
         },
         "ownerName": "荆杭",
-        "createTime": "2025-02-08 15:52:58",
-        "schedulerNodeId": 1023696352,
+        "createTime": "2025-02-08 17:04:11",
         "tenantId": "528666525984994",
         "project": {
           "defaultDiResourceGroupIdentifier": "group_528666525984994",
@@ -139,7 +137,7 @@
       "outputs": {
         "nodeOutputs": [
           {
-            "data": "6239169799742358397",
+            "data": "5218542039612961643",
             "artifactType": "NodeOutput",
             "refTableName": "startnode",
             "isDefault": true
@@ -149,7 +147,7 @@
     },
     {
       "recurrence": "Normal",
-      "id": "6553616167815968589",
+      "id": "7012833540941068899",
       "timeout": 0,
       "instanceMode": "T+1",
       "rerunMode": "Allowed",
@@ -161,7 +159,7 @@
       },
       "script": {
         "language": "spark-sql",
-        "path": "devinTestSparkSQL5/sparksql_insert",
+        "path": "devinTestSparkSQL18/sparksql_insert",
         "runtime": {
           "command": "EMR_SPARK_SQL",
           "commandTypeId": 229,
@@ -175,21 +173,21 @@
           "cu": "0.25"
         },
         "content": "INSERT INTO employees VALUES (19, 'John Doe', 'Engineering', 75000.0);",
-        "id": "8415300142824691574"
+        "id": "6561286378148634438"
       },
       "trigger": {
         "type": "Scheduler",
-        "id": "8176779637154086717",
-        "cron": "00 21 00 * * ?",
+        "id": "5375029817026990419",
+        "cron": "00 18 00 * * ?",
         "startTime": "1970-01-01 00:00:00",
         "endTime": "9999-01-01 00:00:00",
         "timezone": "Asia/Shanghai",
         "delaySeconds": 0
       },
       "runtimeResource": {
-        "resourceGroup": "Serverless_res_group_528666525984994_706350919895266",
-        "id": "6592584198113306515",
-        "resourceGroupId": "1000014900077"
+        "resourceGroup": "group_528666525984994",
+        "id": "8252370676317175749",
+        "resourceGroupId": "1000006800262"
       },
       "name": "sparksql_insert",
       "owner": "200527038829996354",
@@ -197,11 +195,10 @@
         "owner": "200527038829996354",
         "container": {
           "type": "Flow",
-          "uuid": "4641162278948073001"
+          "uuid": "4924731678360223412"
         },
         "ownerName": "荆杭",
-        "createTime": "2025-02-08 15:53:00",
-        "schedulerNodeId": 1023696353,
+        "createTime": "2025-02-08 17:04:12",
         "tenantId": "528666525984994",
         "project": {
           "defaultDiResourceGroupIdentifier": "group_528666525984994",
@@ -227,7 +224,7 @@
       "outputs": {
         "nodeOutputs": [
           {
-            "data": "6553616167815968589",
+            "data": "7012833540941068899",
             "artifactType": "NodeOutput",
             "refTableName": "sparksql_insert",
             "isDefault": true
@@ -238,11 +235,11 @@
   ],
   "dependencies": [
     {
-      "nodeId": "6553616167815968589",
+      "nodeId": "7012833540941068899",
       "depends": [
         {
           "type": "Normal",
-          "output": "6239169799742358397",
+          "output": "5218542039612961643",
           "refTableName": "startnode"
         }
       ]

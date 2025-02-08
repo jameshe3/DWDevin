@@ -11,7 +11,7 @@
                 "rerunTimes": 3,
                 "rerunInterval": 180000,
                 "script": {
-                    "path": "devinTestSparkSQL18/startnode",
+                    "path": "{workflow_name}/startnode",
                     "runtime": {
                         "command": "VIRTUAL",
                         "commandTypeId": 99,

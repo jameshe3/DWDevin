@@ -1,19 +1,26 @@
-# Working DataWorks Workflow Specifications
+# DataWorks Workflow Creation Guide
 
 ## Overview
-This directory contains the working specifications and commands for creating a DataWorks workflow with proper node dependencies.
+This guide provides step-by-step instructions for creating a DataWorks workflow with proper node dependencies.
 
-## Workflow Structure
-1. Create workflow first
-2. Create virtual start node
-3. Create Spark SQL node with dependencies
-4. Update workflow with dependencies
+## Template Files
+1. `workflow_spec.json` - Initial workflow creation
+2. `start_node_spec.json` - Virtual start node
+3. `spark_sql_node_spec.json` - Spark SQL node with dependencies
+4. `workflow_update_spec.json` - Final workflow update with dependencies
 
-## Files
-- `workflow_spec.json`: Initial workflow creation spec
-- `start_node_spec.json`: Virtual start node spec
-- `spark_sql_node_spec.json`: Spark SQL node spec with dependencies
-- `workflow_update_spec.json`: Final workflow update spec with dependencies
+## Variables to Replace
+- `{workflow_name}` - Unique workflow name (e.g., devinTestSparkSQL19)
+- `{workflow_id}` - ID returned from workflow creation
+- `{start_node_id}` - ID returned from start node creation
+- `{spark_sql_node_id}` - ID returned from Spark SQL node creation
+- `{sql_statement}` - Your SQL insert statement
+
+## Steps
+1. Create workflow using `workflow_spec.json`
+2. Create virtual start node using `start_node_spec.json`
+3. Create Spark SQL node using `spark_sql_node_spec.json`
+4. Update workflow with dependencies using `workflow_update_spec.json`
 
 ## Commands
 ```bash
@@ -48,11 +55,14 @@ aliyun dataworks-public GetWorkflowDefinition \
 ```
 
 ## Important Notes
-1. Dependencies must be defined at workflow level with proper nodeId and depends array
-2. Nodes must have proper container references in metadata
+1. Each node must have a unique path
+2. Container references must be set correctly in node metadata
 3. Dependencies must be included during node creation
-4. The workflow-level dependencies array must match workflow1's format exactly
+4. Workflow-level dependencies must match the node dependencies
 
-## API Limitations
-- "该接口不支持批量操作，若 FlowSpec 中定义了不止一个工作流，则除第一个以外的后续工作流均会被忽略" (The interface does not support batch operations. If FlowSpec defines more than one workflow, subsequent workflows after the first one will be ignored)
-- "工作流内部定义的节点也会被直接忽略，请调用 CreateNode 接口依次创建内部节点" (Node definitions within the workflow will be ignored directly, please use the CreateNode interface to create internal nodes one by one)
+## Example Values
+From successful workflow devinTestSparkSQL19:
+- Workflow ID: 6499733942135546679
+- Start Node ID: 7996532164620512845
+- Spark SQL Node ID: 7635763838174670470
+- SQL: INSERT INTO employees VALUES (20, 'Jane Smith', 'Marketing', 82000.0);
