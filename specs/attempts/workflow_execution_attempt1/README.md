@@ -222,3 +222,36 @@ StopWorkflowInstances \
 --Ids '[instance_id1,instance_id2]'
 ```
 
+# Additional API Documentation
+
+## ListWorkflowInstances API
+```bash
+# Command used:
+aliyun dataworks-public \
+--region cn-hangzhou \
+ListWorkflowInstances \
+--ProjectId=257880 \
+--Name="devinTestSparkSQL20run1" \
+--BizDate=1738684800000
+
+# Response:
+{
+	"PagingInfo": {
+		"PageNumber": 1,
+		"PageSize": 10,
+		"TotalCount": 0,
+		"WorkflowInstances": []
+	},
+	"RequestId": "8BB9269E-E256-5D3B-A6A5-270F9DC16E7B"
+}
+```
+
+## StopWorkflowInstances API
+```bash
+# Command format (not executed since workflow completed successfully):
+aliyun dataworks-public \
+--region cn-hangzhou \
+StopWorkflowInstances \
+--Ids '[instance_id1,instance_id2]'
+```
+
