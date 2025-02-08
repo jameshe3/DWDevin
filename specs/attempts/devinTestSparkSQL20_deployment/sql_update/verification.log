@@ -1,0 +1,8 @@
+{
+  "sql": "INSERT INTO employees VALUES (22, 'Sarah Johnson', 'Marketing', 82000.0);",
+  "resource": {
+    "resourceGroup": "Serverless_res_group_528666525984994_706350919895266",
+    "id": "6592584198113306515",
+    "resourceGroupId": "1000014900077"
+  }
+}
