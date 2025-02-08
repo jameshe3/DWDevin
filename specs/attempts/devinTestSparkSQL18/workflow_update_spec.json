@@ -1,0 +1,124 @@
+{
+    "version": "1.1.0",
+    "kind": "CycleWorkflow",
+    "spec": {
+        "name": "devinTestSparkSQL18",
+        "id": "4924731678360223412",
+        "type": "CycleWorkflow",
+        "owner": "200527038829996354",
+        "workflows": [
+            {
+                "script": {
+                    "path": "devinTestSparkSQL18",
+                    "runtime": {
+                        "command": "WORKFLOW"
+                    },
+                    "id": "4870267963116273067"
+                },
+                "id": "4924731678360223412",
+                "trigger": {
+                    "type": "Scheduler",
+                    "id": "7363567887531767479",
+                    "cron": "00 00 00 * * ?",
+                    "startTime": "1970-01-01 00:00:00",
+                    "endTime": "9999-01-01 00:00:00",
+                    "timezone": "Asia/Shanghai",
+                    "delaySeconds": 0
+                },
+                "strategy": {
+                    "timeout": 0,
+                    "instanceMode": "T+1",
+                    "rerunMode": "Allowed",
+                    "rerunTimes": 3,
+                    "rerunInterval": 180000,
+                    "failureStrategy": "Break",
+                    "recurrenceType": "Normal"
+                },
+                "name": "devinTestSparkSQL18",
+                "owner": "200527038829996354",
+                "nodes": [
+                    {
+                        "recurrence": "Normal",
+                        "id": "5218542039612961643",
+                        "timeout": 0,
+                        "instanceMode": "T+1",
+                        "rerunMode": "Allowed",
+                        "rerunTimes": 3,
+                        "rerunInterval": 180000,
+                        "script": {
+                            "path": "devinTestSparkSQL18/startnode",
+                            "runtime": {
+                                "command": "VIRTUAL",
+                                "commandTypeId": 99,
+                                "cu": "0"
+                            }
+                        },
+                        "name": "startnode",
+                        "owner": "200527038829996354",
+                        "metadata": {
+                            "container": {
+                                "type": "Flow",
+                                "uuid": "4924731678360223412"
+                            }
+                        }
+                    },
+                    {
+                        "recurrence": "Normal",
+                        "id": "7012833540941068899",
+                        "timeout": 0,
+                        "instanceMode": "T+1",
+                        "rerunMode": "Allowed",
+                        "rerunTimes": 3,
+                        "rerunInterval": 180000,
+                        "datasource": {
+                            "name": "w_f8e861d482983d5f",
+                            "type": "emr"
+                        },
+                        "script": {
+                            "language": "spark-sql",
+                            "path": "devinTestSparkSQL18/sparksql_insert",
+                            "runtime": {
+                                "command": "EMR_SPARK_SQL",
+                                "commandTypeId": 229,
+                                "emrJobConfig": {
+                                    "priority": "1",
+                                    "ENABLE_SPARKSQL_JDBC": false,
+                                    "REUSE_SESSION": false,
+                                    "FLOW_SKIP_SQL_ANALYZE": false,
+                                    "queue": "default"
+                                },
+                                "cu": "0.25"
+                            },
+                            "content": "INSERT INTO employees VALUES (19, 'John Doe', 'Engineering', 75000.0);"
+                        },
+                        "name": "sparksql_insert",
+                        "owner": "200527038829996354",
+                        "metadata": {
+                            "container": {
+                                "type": "Flow",
+                                "uuid": "4924731678360223412"
+                            }
+                        }
+                    }
+                ],
+                "dependencies": [
+                    {
+                        "nodeId": "7012833540941068899",
+                        "depends": [
+                            {
+                                "type": "Normal",
+                                "output": "5218542039612961643",
+                                "refTableName": "startnode"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "tenantId": "528666525984994",
+        "projectId": "257880",
+        "uuid": "4924731678360223412"
+    }
+}
