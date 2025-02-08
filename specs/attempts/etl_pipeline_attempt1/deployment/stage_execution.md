@@ -8,7 +8,7 @@
 ```bash
 aliyun dataworks-public \
 --endpoint dataworks.cn-hangzhou.aliyuncs.com \
-ExecuteDeploymentStage \
+ExecDeploymentStage \
 --ProjectId=257880 \
 --RegionId=cn-hangzhou \
 --DeploymentId="923b8ee0-d52d-4013-9d22-b60e5e063443" \
@@ -20,7 +20,295 @@ ExecuteDeploymentStage \
 
 ```
 
+- Status:
+```json
+{
+	"Pipeline": {
+		"CreateTime": 1739026825000,
+		"Creator": "200527038829996354",
+		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+		"Message": "",
+		"ModifyTime": 1739026825000,
+		"ProjectId": 257880,
+		"Stages": [
+			{
+				"Code": "BUILD_PACKAGE",
+				"Description": "发布包构建",
+				"Detail": {
+					"checkerList": [
+						{
+							"code": "BuildPackageChecker",
+							"name": "打包检查"
+						},
+						{
+							"code": "NodeParentDependency",
+							"name": "下游依赖检查"
+						},
+						{
+							"code": "NodeInProcess",
+							"name": "下线中流程检查"
+						}
+					]
+				},
+				"Message": "",
+				"Name": "发布包构建",
+				"Status": "Success",
+				"Step": 1,
+				"Type": "Build"
+			},
+			{
+				"Code": "PROD_CHECK",
+				"Description": "生产检查器",
+				"Detail": {},
+				"Name": "生产检查器",
+				"Status": "Init",
+				"Step": 2,
+				"Type": "Check"
+			},
+			{
+				"Code": "PROD",
+				"Description": "发布到生产环境",
+				"Detail": {},
+				"Name": "发布到生产环境",
+				"Status": "Init",
+				"Step": 3,
+				"Type": "Deploy"
+			}
+		],
+		"Status": "Running"
+	},
+	"RequestId": "8121AD54-2B10-51D2-B972-2C1A94524007"
+}
+{
+	"Pipeline": {
+		"CreateTime": 1739026825000,
+		"Creator": "200527038829996354",
+		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+		"Message": "",
+		"ModifyTime": 1739026825000,
+		"ProjectId": 257880,
+		"Stages": [
+			{
+				"Code": "BUILD_PACKAGE",
+				"Description": "发布包构建",
+				"Detail": {
+					"checkerList": [
+						{
+							"code": "BuildPackageChecker",
+							"name": "打包检查"
+						},
+						{
+							"code": "NodeParentDependency",
+							"name": "下游依赖检查"
+						},
+						{
+							"code": "NodeInProcess",
+							"name": "下线中流程检查"
+						}
+					]
+				},
+				"Message": "",
+				"Name": "发布包构建",
+				"Status": "Success",
+				"Step": 1,
+				"Type": "Build"
+			},
+			{
+				"Code": "PROD_CHECK",
+				"Description": "生产检查器",
+				"Detail": {},
+				"Name": "生产检查器",
+				"Status": "Init",
+				"Step": 2,
+				"Type": "Check"
+			},
+			{
+				"Code": "PROD",
+				"Description": "发布到生产环境",
+				"Detail": {},
+				"Name": "发布到生产环境",
+				"Status": "Init",
+				"Step": 3,
+				"Type": "Deploy"
+			}
+		],
+		"Status": "Running"
+	},
+	"RequestId": "2579EBC6-8F88-5E0E-9EC0-40F48548DF7E"
+}
+{
+	"Pipeline": {
+		"CreateTime": 1739026825000,
+		"Creator": "200527038829996354",
+		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+		"Message": "",
+		"ModifyTime": 1739026825000,
+		"ProjectId": 257880,
+		"Stages": [
+			{
+				"Code": "BUILD_PACKAGE",
+				"Description": "发布包构建",
+				"Detail": {
+					"checkerList": [
+						{
+							"code": "BuildPackageChecker",
+							"name": "打包检查"
+						},
+						{
+							"code": "NodeParentDependency",
+							"name": "下游依赖检查"
+						},
+						{
+							"code": "NodeInProcess",
+							"name": "下线中流程检查"
+						}
+					]
+				},
+				"Message": "",
+				"Name": "发布包构建",
+				"Status": "Success",
+				"Step": 1,
+				"Type": "Build"
+			},
+			{
+				"Code": "PROD_CHECK",
+				"Description": "生产检查器",
+				"Detail": {},
+				"Name": "生产检查器",
+				"Status": "Init",
+				"Step": 2,
+				"Type": "Check"
+			},
+			{
+				"Code": "PROD",
+				"Description": "发布到生产环境",
+				"Detail": {},
+				"Name": "发布到生产环境",
+				"Status": "Init",
+				"Step": 3,
+				"Type": "Deploy"
+			}
+		],
+		"Status": "Running"
+	},
+	"RequestId": "B240BD75-8E84-5C4C-8E69-7DAFDB96EBBA"
+}
+{
+	"Pipeline": {
+		"CreateTime": 1739026825000,
+		"Creator": "200527038829996354",
+		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+		"Message": "",
+		"ModifyTime": 1739026825000,
+		"ProjectId": 257880,
+		"Stages": [
+			{
+				"Code": "BUILD_PACKAGE",
+				"Description": "发布包构建",
+				"Detail": {
+					"checkerList": [
+						{
+							"code": "BuildPackageChecker",
+							"name": "打包检查"
+						},
+						{
+							"code": "NodeParentDependency",
+							"name": "下游依赖检查"
+						},
+						{
+							"code": "NodeInProcess",
+							"name": "下线中流程检查"
+						}
+					]
+				},
+				"Message": "",
+				"Name": "发布包构建",
+				"Status": "Success",
+				"Step": 1,
+				"Type": "Build"
+			},
+			{
+				"Code": "PROD_CHECK",
+				"Description": "生产检查器",
+				"Detail": {},
+				"Name": "生产检查器",
+				"Status": "Init",
+				"Step": 2,
+				"Type": "Check"
+			},
+			{
+				"Code": "PROD",
+				"Description": "发布到生产环境",
+				"Detail": {},
+				"Name": "发布到生产环境",
+				"Status": "Init",
+				"Step": 3,
+				"Type": "Deploy"
+			}
+		],
+		"Status": "Running"
+	},
+	"RequestId": "59EAEDED-5CD9-59F6-ACC6-F4F5D0A557F4"
+}
+{
+	"Pipeline": {
+		"CreateTime": 1739026825000,
+		"Creator": "200527038829996354",
+		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+		"Message": "",
+		"ModifyTime": 1739026825000,
+		"ProjectId": 257880,
+		"Stages": [
+			{
+				"Code": "BUILD_PACKAGE",
+				"Description": "发布包构建",
+				"Detail": {
+					"checkerList": [
+						{
+							"code": "BuildPackageChecker",
+							"name": "打包检查"
+						},
+						{
+							"code": "NodeParentDependency",
+							"name": "下游依赖检查"
+						},
+						{
+							"code": "NodeInProcess",
+							"name": "下线中流程检查"
+						}
+					]
+				},
+				"Message": "",
+				"Name": "发布包构建",
+				"Status": "Success",
+				"Step": 1,
+				"Type": "Build"
+			},
+			{
+				"Code": "PROD_CHECK",
+				"Description": "生产检查器",
+				"Detail": {},
+				"Name": "生产检查器",
+				"Status": "Init",
+				"Step": 2,
+				"Type": "Check"
+			},
+			{
+				"Code": "PROD",
+				"Description": "发布到生产环境",
+				"Detail": {},
+				"Name": "发布到生产环境",
+				"Status": "Init",
+				"Step": 3,
+				"Type": "Deploy"
+			}
+		],
+		"Status": "Running"
+	},
+	"RequestId": "554F7822-4C6E-5D69-B02D-1C9201B60121"
+}
+```
+
 ## Next Steps
-1. Wait for PROD_CHECK to complete
-2. Execute PROD stage
-3. Verify final deployment status
+1. Execute PROD stage after PROD_CHECK completes
+2. Verify final deployment status
