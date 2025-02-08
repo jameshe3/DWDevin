@@ -1,0 +1,6 @@
+{
+    "ProjectId": 257880,
+    "WorkflowId": 4613752925849225993,
+    "Comment": "Deploy ETL pipeline with extract, transform, and load nodes to production",
+    "EnvType": "Prod"
+}
