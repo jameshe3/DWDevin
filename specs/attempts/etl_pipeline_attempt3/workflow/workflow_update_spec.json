@@ -17,6 +17,60 @@
                 "id": "8264496917250362898",
                 "name": "etlDevinTest1",
                 "owner": "200527038829996354",
+                "nodes": [
+                    {
+                        "id": "7148347378185425991",
+                        "name": "startnode",
+                        "owner": "200527038829996354",
+                        "script": {
+                            "path": "etlDevinTest1/startnode",
+                            "runtime": {
+                                "command": "VIRTUAL",
+                                "commandTypeId": 99,
+                                "cu": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "6075744335966809526",
+                        "name": "extract_node",
+                        "owner": "200527038829996354",
+                        "script": {
+                            "path": "etlDevinTest1/extract_node",
+                            "runtime": {
+                                "command": "EMR_SPARK_SQL",
+                                "commandTypeId": 229,
+                                "cu": "0.25"
+                            }
+                        }
+                    },
+                    {
+                        "id": "8260871458186937927",
+                        "name": "transform_node",
+                        "owner": "200527038829996354",
+                        "script": {
+                            "path": "etlDevinTest1/transform_node",
+                            "runtime": {
+                                "command": "EMR_SPARK_SQL",
+                                "commandTypeId": 229,
+                                "cu": "0.25"
+                            }
+                        }
+                    },
+                    {
+                        "id": "8895410645212838880",
+                        "name": "load_node",
+                        "owner": "200527038829996354",
+                        "script": {
+                            "path": "etlDevinTest1/load_node",
+                            "runtime": {
+                                "command": "EMR_SPARK_SQL",
+                                "commandTypeId": 229,
+                                "cu": "0.25"
+                            }
+                        }
+                    }
+                ],
                 "dependencies": [
                     {
                         "nodeId": "6075744335966809526",
