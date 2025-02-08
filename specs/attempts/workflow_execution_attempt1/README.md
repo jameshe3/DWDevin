@@ -197,3 +197,28 @@ StopWorkflowInstances \
 --Ids '[instance_id1,instance_id2]'
 ```
 
+# Additional API Documentation
+
+## ListWorkflowInstances API
+```bash
+# Command used:
+aliyun dataworks-public \
+--region cn-hangzhou \
+ListWorkflowInstances \
+--ProjectId=257880 \
+--Name="devinTestSparkSQL20run1" \
+--BizDate="2025-02-05"
+
+# Response:
+
+```
+
+## StopWorkflowInstances API
+```bash
+# Command format (not executed since workflow completed successfully):
+aliyun dataworks-public \
+--region cn-hangzhou \
+StopWorkflowInstances \
+--Ids '[instance_id1,instance_id2]'
+```
+
