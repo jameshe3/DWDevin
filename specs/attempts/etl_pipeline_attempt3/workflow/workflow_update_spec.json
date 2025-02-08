@@ -1,0 +1,60 @@
+{
+    "version": "1.1.0",
+    "kind": "CycleWorkflow",
+    "spec": {
+        "name": "etlDevinTest1",
+        "id": "8264496917250362898",
+        "type": "CycleWorkflow",
+        "owner": "200527038829996354",
+        "workflows": [
+            {
+                "script": {
+                    "path": "etlDevinTest1",
+                    "runtime": {
+                        "command": "WORKFLOW"
+                    }
+                },
+                "id": "8264496917250362898",
+                "name": "etlDevinTest1",
+                "owner": "200527038829996354",
+                "dependencies": [
+                    {
+                        "nodeId": "6075744335966809526",
+                        "depends": [
+                            {
+                                "type": "Normal",
+                                "output": "7148347378185425991",
+                                "refTableName": "startnode"
+                            }
+                        ]
+                    },
+                    {
+                        "nodeId": "8260871458186937927",
+                        "depends": [
+                            {
+                                "type": "Normal",
+                                "output": "6075744335966809526",
+                                "refTableName": "extract_node"
+                            }
+                        ]
+                    },
+                    {
+                        "nodeId": "8895410645212838880",
+                        "depends": [
+                            {
+                                "type": "Normal",
+                                "output": "8260871458186937927",
+                                "refTableName": "transform_node"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "tenantId": "528666525984994",
+        "projectId": "257880",
+        "uuid": "8264496917250362898"
+    }
+}
