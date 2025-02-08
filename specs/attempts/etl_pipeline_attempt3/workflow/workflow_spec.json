@@ -3,7 +3,6 @@
     "kind": "CycleWorkflow",
     "spec": {
         "name": "etlDevinTest_1739029400",
-        "id": "6818925108286773471",
         "type": "CycleWorkflow",
         "owner": "200527038829996354",
         "workflows": [
@@ -14,7 +13,6 @@
                         "command": "WORKFLOW"
                     }
                 },
-                "id": "6818925108286773471",
                 "trigger": {
                     "type": "Scheduler",
                     "cron": "00 00 00 * * ?",
@@ -39,7 +37,6 @@
     },
     "metadata": {
         "tenantId": "528666525984994",
-        "projectId": "257880",
-        "uuid": "6818925108286773471"
+        "projectId": "257880"
     }
 }
