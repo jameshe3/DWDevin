@@ -2,13 +2,13 @@
     "version": "1.1.0",
     "kind": "CycleWorkflow",
     "spec": {
-        "name": "devinTestSparkSQL18",
+        "name": "etlDevinTest",
         "type": "CycleWorkflow",
         "owner": "200527038829996354",
         "workflows": [
             {
                 "script": {
-                    "path": "devinTestSparkSQL18",
+                    "path": "etlDevinTest",
                     "runtime": {
                         "command": "WORKFLOW"
                     }
@@ -30,7 +30,7 @@
                     "failureStrategy": "Break",
                     "recurrenceType": "Normal"
                 },
-                "name": "devinTestSparkSQL18",
+                "name": "etlDevinTest",
                 "owner": "200527038829996354"
             }
         ]
