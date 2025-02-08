@@ -2,13 +2,13 @@
     "version": "1.1.0",
     "kind": "CycleWorkflow",
     "spec": {
-        "name": "etlDevinTest_1739029400",
+        "name": "etlDevinTest1",
         "type": "CycleWorkflow",
         "owner": "200527038829996354",
         "workflows": [
             {
                 "script": {
-                    "path": "etlDevinTest_1739029400",
+                    "path": "etlDevinTest1",
                     "runtime": {
                         "command": "WORKFLOW"
                     }
@@ -30,7 +30,7 @@
                     "failureStrategy": "Break",
                     "recurrenceType": "Normal"
                 },
-                "name": "etlDevinTest_1739029400",
+                "name": "etlDevinTest1",
                 "owner": "200527038829996354"
             }
         ]
