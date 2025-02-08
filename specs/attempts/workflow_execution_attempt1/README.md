@@ -173,3 +173,27 @@ GetWorkflowInstance \
 2. First instance (1000341554601) completed successfully
 3. Second instance (1000341554605) waiting due to parallelism=1 configuration
 
+# Additional API Documentation
+
+## ListWorkflowInstances API
+```bash
+# Command used:
+aliyun dataworks-public \
+--region cn-hangzhou \
+ListWorkflowInstances \
+--ProjectId=257880 \
+--Name="devinTestSparkSQL20run1"
+
+# Response:
+
+```
+
+## StopWorkflowInstances API
+```bash
+# Command format (not executed since workflow completed successfully):
+aliyun dataworks-public \
+--region cn-hangzhou \
+StopWorkflowInstances \
+--Ids '[instance_id1,instance_id2]'
+```
+
