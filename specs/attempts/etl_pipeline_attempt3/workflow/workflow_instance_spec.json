@@ -11,7 +11,8 @@
         },
         "Parallelism": 1,
         "RuntimeResource": "Serverless_res_group_528666525984994_706350919895266",
-        "Mode": "AllDownstream"
+        "Mode": "AllDownstream",
+        "RootTaskIds": [7148347378185425991]
     },
     "AutoStartEnabled": true,
     "BizdateIntervals": [
