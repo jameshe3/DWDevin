@@ -3,18 +3,21 @@
 ## Reference Workflow (workflow1) Dependencies
 
 
-## ETL Pipeline Dependencies Structure
-1. Extract Node -> Start Node
-   - Type: Normal
-   - Output reference: startnode
+## Our ETL Pipeline Dependencies
+- Extract Node -> Start Node
+  - Type: Normal
+  - Output reference: startnode
+  - Container reference: Flow type with workflow UUID
 
-2. Transform Node -> Extract Node
-   - Type: Normal
-   - Output reference: extract_node
+- Transform Node -> Extract Node
+  - Type: Normal
+  - Output reference: extract_node
+  - Container reference: Flow type with workflow UUID
 
-3. Load Node -> Transform Node
-   - Type: Normal
-   - Output reference: transform_node
+- Load Node -> Transform Node
+  - Type: Normal
+  - Output reference: transform_node
+  - Container reference: Flow type with workflow UUID
 
 ## Verification Results
 ✓ Dependencies structure matches workflow1's format
