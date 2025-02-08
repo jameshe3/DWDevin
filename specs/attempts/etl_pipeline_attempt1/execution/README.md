@@ -1,34 +1,6 @@
 # Workflow Instance Creation and Execution
 
 ## 1. Create Workflow Instances
-```bash
-# Command used:
-aliyun dataworks-public \
---endpoint dataworks.cn-hangzhou.aliyuncs.com \
-CreateWorkflowInstances \
---region cn-hangzhou \
---DefaultRunProperties '{
-  "Analysis": {
-    "Enabled": false,
-    "Blocked": false
-  },
-  "Parallelism": 1,
-  "RootTaskIds": [1023697426],
-  "Mode": "AllDownstream"
-}' \
---EnvType Prod \
---ProjectId 257880 \
---WorkflowId 1023697425 \
---Name etl_pipeline_run1 \
---Periods '{
-  "BizDates": [{
-    "StartBizDate": "2025-02-05",
-    "EndBizDate": "2025-02-06"
-  }]
-}' \
---Type SupplementData
-
-# Response:
 ```json
 {
 	"OperationId": "997ba921-f8a4-4704-85f6-f4a032c8b1c2",
@@ -46,6 +18,66 @@ CreateWorkflowInstances \
 			1000341555642,
 			1000341555646
 		]
+	}
+}
+```
+
+## 3. Start Workflow Instances
+```json
+{
+	"RequestId": "4CDC4DF2-3374-54EE-AF64-233C7B1E796C",
+	"SuccessInfo": {
+		"1000341555642": {
+			"Success": true
+		},
+		"1000341555646": {
+			"Message": "Because of parallelism config, wait for parent workflowInstance[1000341555642] to finish",
+			"Success": false
+		}
+	}
+}
+```
+
+## 4. Monitor Execution Status
+### Instance 1 (1000341555642)
+```json
+{
+	"RequestId": "94A0E999-6CB3-5B4C-9379-37C896C7BE8D",
+	"WorkflowInstance": {
+		"BizDate": 1738684800000,
+		"CreateTime": 1739027605000,
+		"CreateUser": "200527038829996354",
+		"EnvType": "Prod",
+		"Id": 1000341555642,
+		"ModifyTime": 1739027642000,
+		"ModifyUser": "200527038829996354",
+		"Name": "etl_pipeline_run1",
+		"ProjectId": 257880,
+		"StartedTime": 1739027642000,
+		"Status": "Running",
+		"Type": "SupplementData",
+		"WorkflowId": 1
+	}
+}
+```
+
+### Instance 2 (1000341555646)
+```json
+{
+	"RequestId": "0F971082-FFD9-53EF-8103-84BF42DAC4D1",
+	"WorkflowInstance": {
+		"BizDate": 1738771200000,
+		"CreateTime": 1739027606000,
+		"CreateUser": "200527038829996354",
+		"EnvType": "Prod",
+		"Id": 1000341555646,
+		"ModifyTime": 1739027606000,
+		"ModifyUser": "200527038829996354",
+		"Name": "etl_pipeline_run1",
+		"ProjectId": 257880,
+		"Status": "NotRun",
+		"Type": "SupplementData",
+		"WorkflowId": 1
 	}
 }
 ```
