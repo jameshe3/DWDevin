@@ -1,0 +1,18 @@
+{
+  "Id": "f2fc6ebf-26f6-40b0-9010-2d8ff6f9472e",
+  "Status": "Running",
+  "Stages": [
+    {
+      "Code": "BUILD_PACKAGE",
+      "Status": "Success"
+    },
+    {
+      "Code": "PROD_CHECK",
+      "Status": "Init"
+    },
+    {
+      "Code": "PROD",
+      "Status": "Init"
+    }
+  ]
+}
