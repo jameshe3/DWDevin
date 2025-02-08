@@ -1,0 +1,6 @@
+{
+    "ProjectId": 257880,
+    "Type": "Online",
+    "ObjectIds": ["8264496917250362898"],
+    "Description": "Deploy ETL pipeline with extract, transform, and load nodes to production"
+}
