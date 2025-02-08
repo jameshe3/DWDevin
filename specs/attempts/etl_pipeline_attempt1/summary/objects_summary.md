@@ -21,29 +21,7 @@ ID: 923b8ee0-d52d-4013-9d22-b60e5e063443
   - PROD_CHECK: Success
   - PROD: Success
 
-## 3. Workflow Instances
-### For devinTestSparkSQL20 (1023697425)
+## 3. Workflow Instances (Status: Success)
 ```json
-{
-	"PagingInfo": {
-		"PageNumber": 1,
-		"PageSize": 10,
-		"TotalCount": 0,
-		"WorkflowInstances": []
-	},
-	"RequestId": "AD85F984-6CFC-5388-95D3-1F117238FEF2"
-}
-```
 
-### For devinTestSparkSQL19 (1023697295)
-```json
-{
-	"PagingInfo": {
-		"PageNumber": 1,
-		"PageSize": 10,
-		"TotalCount": 0,
-		"WorkflowInstances": []
-	},
-	"RequestId": "A56DBA2B-444F-5CE6-A564-8A4515CC9148"
-}
 ```
