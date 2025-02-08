@@ -1,0 +1,11 @@
+{
+    "version": "1.1.0",
+    "kind": "WorkflowInstance",
+    "spec": {
+        "projectId": 257880,
+        "workflowId": "5188541262300189362",
+        "name": "devinTestSparkSQL20_execution",
+        "type": "ManualWorkflow",
+        "envType": "Prod"
+    }
+}
