@@ -4,7 +4,7 @@
 		"Creator": "200527038829996354",
 		"Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
 		"Message": "",
-		"ModifyTime": 1739026825000,
+		"ModifyTime": 1739027509000,
 		"ProjectId": 257880,
 		"Stages": [
 			{
@@ -36,8 +36,9 @@
 				"Code": "PROD_CHECK",
 				"Description": "生产检查器",
 				"Detail": {},
+				"Message": "",
 				"Name": "生产检查器",
-				"Status": "Init",
+				"Status": "Success",
 				"Step": 2,
 				"Type": "Check"
 			},
@@ -45,13 +46,14 @@
 				"Code": "PROD",
 				"Description": "发布到生产环境",
 				"Detail": {},
+				"Message": "",
 				"Name": "发布到生产环境",
-				"Status": "Init",
+				"Status": "Success",
 				"Step": 3,
 				"Type": "Deploy"
 			}
 		],
-		"Status": "Running"
+		"Status": "Success"
 	},
-	"RequestId": "C0F09F07-7E32-5D7D-9B91-24B3A5E2670C"
+	"RequestId": "C3ED0887-65DF-5C59-8117-2738ACC79A1A"
 }
