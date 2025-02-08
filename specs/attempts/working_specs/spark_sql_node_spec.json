@@ -16,7 +16,7 @@
                 },
                 "script": {
                     "language": "spark-sql",
-                    "path": "{workflow_name}/sparksql_insert",
+                    "path": "devinTestSparkSQL18/sparksql_insert",
                     "runtime": {
                         "command": "EMR_SPARK_SQL",
                         "commandTypeId": 229,
