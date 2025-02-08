@@ -1,7 +1,7 @@
 # Command used to create workflow
 aliyun dataworks-public \
 --endpoint dataworks.cn-hangzhou.aliyuncs.com \
-CreateFlow \
+CreateWorkflowDefinition \
 --ProjectId=257880 \
 --RegionId=cn-hangzhou \
 --Name=devinTestETLPipeline \
