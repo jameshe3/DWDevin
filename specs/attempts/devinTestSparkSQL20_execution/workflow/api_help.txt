@@ -1,0 +1,49 @@
+Alibaba Cloud Command Line Interface Version 3.0.251
+
+Product: dataworks-public ()
+
+Parameters:
+  --[1;30m[0m[1;30mName[0m String  Required
+
+  
+
+  --[1;30m[0m[1;30mProjectId[0m Long    Required
+
+  
+
+  --[1;30m[0m[1;30mType[0m String  Required
+
+  
+
+  --[1;30m[0m[1;30mWorkflowId[0m Long    Required
+
+  
+
+  --[1;30m[0m[1;30mAutoStartEnabled[0m Boolean Optional
+
+  
+
+  --[1;30m[0m[1;30mComment[0m String  Optional
+
+  
+
+  --[1;30m[0m[1;30mDefaultRunProperties[0m String  Optional
+
+  
+
+  --[1;30m[0m[1;30mEnvType[0m String  Optional
+
+  
+
+  --[1;30m[0m[1;30mPeriods[0m String  Optional
+
+  
+
+  --[1;30m[0m[1;30mTaskParameters[0m String  Optional
+
+  
+
+  --[1;30m[0m[1;30mWorkflowParameters[0m String  Optional
+
+  
+

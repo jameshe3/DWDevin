@@ -1,0 +1,11 @@
+{
+  "ProjectId": 257880,
+  "WorkflowId": 5188541262300189362,
+  "Name": "devinTestSparkSQL20_execution_run1",
+  "Type": "ManualWorkflow",
+  "EnvType": "Prod",
+  "BizdateIntervals": [{
+    "StartBizDate": "20240205",
+    "EndBizDate": "20240207"
+  }]
+}
