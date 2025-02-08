@@ -4,19 +4,13 @@
 1. Created deployment with:
    - ProjectId: 257880
    - Type: NORMAL
-   - ObjectIds: [workflow_id]
+   - ObjectIds: [1023697425] (devinTestSparkSQL20)
 
 2. Deployment Response:
 ```json
 
 ```
 
-3. Deployment Status:
-```json
-
-```
-
 ## Verification
-- Status should be 'Success'
-- All stages should complete successfully
-- No error messages in response
+- Using workflow ID from ListWorkflows response
+- Checking against example deployment status format
