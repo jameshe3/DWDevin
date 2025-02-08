@@ -1,0 +1,17 @@
+{
+	"RequestId": "780F9950-D25F-595D-AD03-BF35D672FE54",
+	"WorkflowInstance": {
+		"BizDate": 1738771200000,
+		"CreateTime": 1739022201000,
+		"CreateUser": "200527038829996354",
+		"EnvType": "Prod",
+		"Id": 1000341554605,
+		"ModifyTime": 1739022201000,
+		"ModifyUser": "200527038829996354",
+		"Name": "devinTestSparkSQL20run1",
+		"ProjectId": 257880,
+		"Status": "NotRun",
+		"Type": "SupplementData",
+		"WorkflowId": 1
+	}
+}

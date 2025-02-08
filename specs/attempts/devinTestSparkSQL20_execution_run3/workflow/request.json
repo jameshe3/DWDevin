@@ -1,0 +1,18 @@
+{
+  "Name": "devinTestSparkSQL20_execution_run3",
+  "ProjectId": 257880,
+  "Type": "ManualWorkflow",
+  "WorkflowId": 5188541262300189362,
+  "EnvType": "Prod",
+  "DefaultRunProperties": {
+    "RuntimeResource": "Serverless_res_group_528666525984994_706350919895266"
+  },
+  "Analysis": {
+    "Enabled": false,
+    "Blocked": false
+  },
+  "BizDates": [{
+    "StartBizDate": "20250208",
+    "EndBizDate": "20250208"
+  }]
+}

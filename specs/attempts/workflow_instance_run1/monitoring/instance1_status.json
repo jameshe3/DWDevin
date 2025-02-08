@@ -1,0 +1,37 @@
+{
+	"RequestId": "B48DCB8B-E61A-5B9E-BAD2-D477571F698E",
+	"WorkflowInstance": {
+		"BizDate": 1738684800000,
+		"CreateTime": 1739022201000,
+		"CreateUser": "200527038829996354",
+		"EnvType": "Prod",
+		"Id": 1000341554601,
+		"ModifyTime": 1739022265000,
+		"ModifyUser": "200527038829996354",
+		"Name": "devinTestSparkSQL20run1",
+		"ProjectId": 257880,
+		"StartedTime": 1739022265000,
+		"Status": "Running",
+		"Type": "SupplementData",
+		"WorkflowId": 1
+	}
+}
+{
+	"RequestId": "6250466C-9824-544A-8323-EF246E52FEBB",
+	"WorkflowInstance": {
+		"BizDate": 1738684800000,
+		"CreateTime": 1739022201000,
+		"CreateUser": "200527038829996354",
+		"EnvType": "Prod",
+		"FinishedTime": 1739022338000,
+		"Id": 1000341554601,
+		"ModifyTime": 1739022338000,
+		"ModifyUser": "200527038829996354",
+		"Name": "devinTestSparkSQL20run1",
+		"ProjectId": 257880,
+		"StartedTime": 1739022265000,
+		"Status": "Success",
+		"Type": "SupplementData",
+		"WorkflowId": 1
+	}
+}
