@@ -14,15 +14,13 @@ ID: 923b8ee0-d52d-4013-9d22-b60e5e063443
 - Status: Success
 - All stages completed successfully
 
-## 3. Workflow Instances (WorkflowId=1, BizDate=20250205)
+## 3. Workflow Instances
+### Instance 1 (ID: 1000341555642)
 ```json
-{
-	"PagingInfo": {
-		"PageNumber": 1,
-		"PageSize": 10,
-		"TotalCount": 0,
-		"WorkflowInstances": []
-	},
-	"RequestId": "0980118B-405D-5494-93DD-3917215639F5"
-}
+
+```
+
+### Instance 2 (ID: 1000341555646)
+```json
+
 ```
