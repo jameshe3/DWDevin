@@ -11,7 +11,7 @@
                 "rerunTimes": 3,
                 "rerunInterval": 180000,
                 "script": {
-                    "path": "etlDevinTest_1739029400/startnode",
+                    "path": "etlDevinTest1/startnode",
                     "runtime": {
                         "command": "VIRTUAL",
                         "commandTypeId": 99,
@@ -23,7 +23,7 @@
                 "metadata": {
                     "container": {
                         "type": "Flow",
-                        "uuid": "8959383572014405621"
+                        "uuid": "8264496917250362898"
                     }
                 }
             }
