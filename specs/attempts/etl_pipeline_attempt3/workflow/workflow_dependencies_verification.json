@@ -1,0 +1,32 @@
+[
+  {
+    "nodeId": "6075744335966809526",
+    "depends": [
+      {
+        "type": "Normal",
+        "output": "7148347378185425991",
+        "refTableName": "startnode"
+      }
+    ]
+  },
+  {
+    "nodeId": "8260871458186937927",
+    "depends": [
+      {
+        "type": "Normal",
+        "output": "6075744335966809526",
+        "refTableName": "extract_node"
+      }
+    ]
+  },
+  {
+    "nodeId": "8895410645212838880",
+    "depends": [
+      {
+        "type": "Normal",
+        "output": "8260871458186937927",
+        "refTableName": "transform_node"
+      }
+    ]
+  }
+]
