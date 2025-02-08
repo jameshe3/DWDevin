@@ -1,0 +1,40 @@
+{
+    "version": "1.1.0",
+    "kind": "CycleWorkflow",
+    "spec": {
+        "name": "devinTestSparkSQL17",
+        "id": "6883258312654140966",
+        "type": "CycleWorkflow",
+        "owner": "200527038829996354",
+        "workflows": [
+            {
+                "script": {
+                    "path": "devinTestSparkSQL17",
+                    "runtime": {
+                        "command": "WORKFLOW"
+                    }
+                },
+                "id": "6883258312654140966",
+                "name": "devinTestSparkSQL17",
+                "owner": "200527038829996354",
+                "dependencies": [
+                    {
+                        "nodeId": "6151211546926243000",
+                        "depends": [
+                            {
+                                "type": "Normal",
+                                "output": "8353407845749231000",
+                                "refTableName": "startnode"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "tenantId": "528666525984994",
+        "projectId": "257880",
+        "uuid": "6883258312654140966"
+    }
+}

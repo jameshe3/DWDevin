@@ -1,0 +1,164 @@
+[
+  {
+    "recurrence": "Normal",
+    "id": "5122633671238812000",
+    "timeout": 0,
+    "instanceMode": "T+1",
+    "rerunMode": "Allowed",
+    "rerunTimes": 3,
+    "rerunInterval": 180000,
+    "datasource": {
+      "name": "w_f8e861d482983d5f",
+      "type": "emr"
+    },
+    "script": {
+      "language": "spark-sql",
+      "path": "devinTestSparkSQL13/sparksql_insert",
+      "runtime": {
+        "command": "EMR_SPARK_SQL",
+        "commandTypeId": 229,
+        "emrJobConfig": {
+          "priority": "1",
+          "ENABLE_SPARKSQL_JDBC": false,
+          "REUSE_SESSION": false,
+          "FLOW_SKIP_SQL_ANALYZE": false,
+          "queue": "default"
+        },
+        "cu": "0.25"
+      },
+      "content": "INSERT INTO employees VALUES (19, 'John Doe', 'Engineering', 75000.0);",
+      "id": "8942365412323424480"
+    },
+    "trigger": {
+      "type": "Scheduler",
+      "id": "5194024876740062904",
+      "cron": "00 09 00 * * ?",
+      "startTime": "1970-01-01 00:00:00",
+      "endTime": "9999-01-01 00:00:00",
+      "timezone": "Asia/Shanghai",
+      "delaySeconds": 0
+    },
+    "runtimeResource": {
+      "resourceGroup": "group_528666525984994",
+      "id": "8252370676317175749",
+      "resourceGroupId": "1000006800262"
+    },
+    "name": "sparksql_insert",
+    "owner": "200527038829996354",
+    "metadata": {
+      "owner": "200527038829996354",
+      "container": {
+        "type": "Flow",
+        "uuid": "7675514201939196716"
+      },
+      "ownerName": "荆杭",
+      "createTime": "2025-02-08 16:58:27",
+      "tenantId": "528666525984994",
+      "project": {
+        "defaultDiResourceGroupIdentifier": "group_528666525984994",
+        "mode": "SIMPLE",
+        "projectId": "257880",
+        "projectIdentifier": "devin2",
+        "projectName": "devin2",
+        "projectOwnerId": "1048137137522297",
+        "properties": {
+          "enableChangeNodeOwner": true,
+          "enableScheduler": true,
+          "operator": "200527038829996354"
+        },
+        "schedulerMaxRetryTimes": 3,
+        "schedulerRetryInterval": 120000,
+        "securityInfo": "{\"isAllowDownload\":1}",
+        "simple": true,
+        "tenantId": "528666525984994"
+      },
+      "projectId": "257880"
+    },
+    "inputs": {},
+    "outputs": {
+      "nodeOutputs": [
+        {
+          "data": "5122633671238812000",
+          "artifactType": "NodeOutput",
+          "refTableName": "sparksql_insert",
+          "isDefault": true
+        }
+      ]
+    }
+  },
+  {
+    "recurrence": "Normal",
+    "id": "7124332022172138000",
+    "timeout": 0,
+    "instanceMode": "T+1",
+    "rerunMode": "Allowed",
+    "rerunTimes": 3,
+    "rerunInterval": 180000,
+    "script": {
+      "path": "devinTestSparkSQL13/startnode",
+      "runtime": {
+        "command": "VIRTUAL",
+        "commandTypeId": 99,
+        "cu": "0"
+      },
+      "content": "",
+      "id": "6293565832277451066"
+    },
+    "trigger": {
+      "type": "Scheduler",
+      "id": "4662167024960301752",
+      "cron": "00 02 00 * * ?",
+      "startTime": "1970-01-01 00:00:00",
+      "endTime": "9999-01-01 00:00:00",
+      "timezone": "Asia/Shanghai",
+      "delaySeconds": 0
+    },
+    "runtimeResource": {
+      "resourceGroup": "group_528666525984994",
+      "id": "8252370676317175749",
+      "resourceGroupId": "1000006800262"
+    },
+    "name": "startnode",
+    "owner": "200527038829996354",
+    "metadata": {
+      "owner": "200527038829996354",
+      "container": {
+        "type": "Flow",
+        "uuid": "7675514201939196716"
+      },
+      "ownerName": "荆杭",
+      "createTime": "2025-02-08 16:58:25",
+      "tenantId": "528666525984994",
+      "project": {
+        "defaultDiResourceGroupIdentifier": "group_528666525984994",
+        "mode": "SIMPLE",
+        "projectId": "257880",
+        "projectIdentifier": "devin2",
+        "projectName": "devin2",
+        "projectOwnerId": "1048137137522297",
+        "properties": {
+          "enableChangeNodeOwner": true,
+          "enableScheduler": true,
+          "operator": "200527038829996354"
+        },
+        "schedulerMaxRetryTimes": 3,
+        "schedulerRetryInterval": 120000,
+        "securityInfo": "{\"isAllowDownload\":1}",
+        "simple": true,
+        "tenantId": "528666525984994"
+      },
+      "projectId": "257880"
+    },
+    "inputs": {},
+    "outputs": {
+      "nodeOutputs": [
+        {
+          "data": "7124332022172138000",
+          "artifactType": "NodeOutput",
+          "refTableName": "startnode",
+          "isDefault": true
+        }
+      ]
+    }
+  }
+]
