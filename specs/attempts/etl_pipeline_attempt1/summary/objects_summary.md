@@ -16,5 +16,13 @@ Stages:
 
 ## 3. Workflow Instances
 ```json
-
+{
+	"PagingInfo": {
+		"PageNumber": 1,
+		"PageSize": 10,
+		"TotalCount": 0,
+		"WorkflowInstances": []
+	},
+	"RequestId": "2E33D5C1-D263-5B9C-9FF3-2E9850AB1B32"
+}
 ```
