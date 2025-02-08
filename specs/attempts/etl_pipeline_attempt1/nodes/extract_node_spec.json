@@ -1,0 +1,52 @@
+{
+    "version": "1.1.0",
+    "kind": "Node",
+    "spec": {
+        "nodes": [
+            {
+                "recurrence": "Normal",
+                "timeout": 0,
+                "instanceMode": "T+1",
+                "rerunMode": "Allowed",
+                "rerunTimes": 3,
+                "rerunInterval": 180000,
+                "datasource": {
+                    "name": "w_f8e861d482983d5f",
+                    "type": "emr"
+                },
+                "script": {
+                    "language": "spark-sql",
+                    "path": "devinTestETLPipeline/extract_node",
+                    "runtime": {
+                        "command": "EMR_SPARK_SQL",
+                        "commandTypeId": 229,
+                        "emrJobConfig": {
+                            "priority": "1",
+                            "ENABLE_SPARKSQL_JDBC": false,
+                            "REUSE_SESSION": false,
+                            "FLOW_SKIP_SQL_ANALYZE": false,
+                            "queue": "default"
+                        },
+                        "cu": "0.25"
+                    },
+                    "content": "CREATE TABLE IF NOT EXISTS extracted_employees AS SELECT employee_id, name, department, salary FROM employees;"
+                },
+                "name": "extract_node",
+                "owner": "200527038829996354",
+                "metadata": {
+                    "container": {
+                        "type": "Flow",
+                        "uuid": "{workflow_id}"
+                    }
+                },
+                "dependencies": [
+                    {
+                        "type": "Normal",
+                        "output": "{start_node_id}",
+                        "refTableName": "startnode"
+                    }
+                ]
+            }
+        ]
+    }
+}
