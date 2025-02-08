@@ -1,0 +1,12 @@
+{
+  "nodeId": "6075744335966809526",
+  "depends": "startnode"
+}
+{
+  "nodeId": "8260871458186937927",
+  "depends": "extract_node"
+}
+{
+  "nodeId": "8895410645212838880",
+  "depends": "transform_node"
+}
