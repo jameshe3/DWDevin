@@ -10,7 +10,8 @@
                 "script": {
                     "path": "etlDevinTest",
                     "runtime": {
-                        "command": "WORKFLOW"
+                        "command": "WORKFLOW",
+                        "runtimeResource": "Serverless_res_group_528666525984994_706350919895266"
                     }
                 },
                 "trigger": {
