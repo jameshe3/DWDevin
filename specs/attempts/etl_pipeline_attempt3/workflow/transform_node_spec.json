@@ -29,7 +29,7 @@
                         },
                         "cu": "0.25"
                     },
-                    "content": "SELECT employee_id, name, department, salary, salary * 12 AS annual_salary, salary * 0.05 AS bonus INTO transformed_employees FROM extracted_employees;"
+                    "content": "--EMR Spark SQL\n--********************************************************************--\n--author: 荆杭\n--create time: 2025-02-09 07:44:26\n--EMR任务只能运行在独享资源组上\n--********************************************************************--\nSELECT employee_id, name, department, salary, salary * 12 AS annual_salary, salary * 0.05 AS bonus INTO transformed_employees FROM extracted_employees;"
                 },
                 "name": "transform_node",
                 "owner": "200527038829996354",

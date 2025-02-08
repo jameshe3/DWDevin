@@ -29,7 +29,7 @@
                         },
                         "cu": "0.25"
                     },
-                    "content": "SELECT employee_id, name, department, salary INTO extracted_employees FROM employees;"
+                    "content": "--EMR Spark SQL\n--********************************************************************--\n--author: 荆杭\n--create time: 2025-02-09 07:44:25\n--EMR任务只能运行在独享资源组上\n--********************************************************************--\nSELECT employee_id, name, department, salary INTO extracted_employees FROM employees;"
                 },
                 "name": "extract_node",
                 "owner": "200527038829996354",
