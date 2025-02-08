@@ -1,0 +1,12 @@
+[
+  {
+    "nodeId": "7012833540941068899",
+    "depends": [
+      {
+        "type": "Normal",
+        "output": "5218542039612961643",
+        "refTableName": "startnode"
+      }
+    ]
+  }
+]
