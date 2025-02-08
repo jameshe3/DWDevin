@@ -14,11 +14,5 @@
         "Mode": "AllDownstream",
         "RootTaskIds": [7148347378185425991]
     },
-    "AutoStartEnabled": true,
-    "BizdateIntervals": [
-        {
-            "StartBizdate": "2025-02-05",
-            "EndBizdate": "2025-02-06"
-        }
-    ]
+    "AutoStartEnabled": true
 }
