@@ -31,7 +31,8 @@
                     "recurrenceType": "Normal"
                 },
                 "name": "etlDevinTest",
-                "owner": "200527038829996354"
+                "owner": "200527038829996354",
+                "dependencies": []
             }
         ]
     },
