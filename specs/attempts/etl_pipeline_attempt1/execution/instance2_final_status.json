@@ -1,0 +1,18 @@
+{
+	"RequestId": "57BAB804-323A-56B8-B5F4-CDA7C25D89E5",
+	"WorkflowInstance": {
+		"BizDate": 1738771200000,
+		"CreateTime": 1739027606000,
+		"CreateUser": "200527038829996354",
+		"EnvType": "Prod",
+		"Id": 1000341555646,
+		"ModifyTime": 1739027731000,
+		"ModifyUser": "200527038829996354",
+		"Name": "etl_pipeline_run1",
+		"ProjectId": 257880,
+		"StartedTime": 1739027731000,
+		"Status": "Running",
+		"Type": "SupplementData",
+		"WorkflowId": 1
+	}
+}
