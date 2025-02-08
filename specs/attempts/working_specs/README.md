@@ -1,20 +1,30 @@
 # DataWorks Workflow Creation Guide
 
 ## Overview
-This guide provides step-by-step instructions for creating a DataWorks workflow with proper node dependencies.
+This guide provides step-by-step instructions for creating a DataWorks workflow with proper node dependencies and resource group configuration.
 
 ## Template Files
 1. `workflow_spec.json` - Initial workflow creation
 2. `start_node_spec.json` - Virtual start node
-3. `spark_sql_node_spec.json` - Spark SQL node with dependencies
+3. `spark_sql_node_spec.json` - Spark SQL node with dependencies and resource group
 4. `workflow_update_spec.json` - Final workflow update with dependencies
 
 ## Variables to Replace
-- `{workflow_name}` - Unique workflow name (e.g., devinTestSparkSQL19)
+- `{workflow_name}` - Unique workflow name (e.g., devinTestSparkSQL20)
 - `{workflow_id}` - ID returned from workflow creation
 - `{start_node_id}` - ID returned from start node creation
 - `{spark_sql_node_id}` - ID returned from Spark SQL node creation
 - `{sql_statement}` - Your SQL insert statement
+
+## Resource Group Configuration
+The Spark SQL node must use this resource group configuration:
+```json
+"runtimeResource": {
+    "resourceGroup": "Serverless_res_group_528666525984994_706350919895266",
+    "id": "6592584198113306515",
+    "resourceGroupId": "1000014900077"
+}
+```
 
 ## Steps
 1. Create workflow using `workflow_spec.json`
@@ -59,10 +69,11 @@ aliyun dataworks-public GetWorkflowDefinition \
 2. Container references must be set correctly in node metadata
 3. Dependencies must be included during node creation
 4. Workflow-level dependencies must match the node dependencies
+5. Resource group configuration must be set correctly for Spark SQL node
 
 ## Example Values
-From successful workflow devinTestSparkSQL19:
-- Workflow ID: 6499733942135546679
-- Start Node ID: 7996532164620512845
-- Spark SQL Node ID: 7635763838174670470
-- SQL: INSERT INTO employees VALUES (20, 'Jane Smith', 'Marketing', 82000.0);
+From successful workflow devinTestSparkSQL20:
+- Workflow ID: 5188541262300189362
+- Start Node ID: 5641930453604779880
+- Spark SQL Node ID: 5830149652015861777
+- SQL: INSERT INTO employees VALUES (21, 'David Wilson', 'Sales', 78000.0);
