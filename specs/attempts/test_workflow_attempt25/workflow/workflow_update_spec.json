@@ -2,28 +2,28 @@
   "version": "1.1.0",
   "kind": "CycleWorkflow",
   "spec": {
-    "name": "devinTest14",
-    "id": "5964953247496120150",
+    "name": "devinTest18",
+    "id": "8338195478667005112",
     "type": "CycleWorkflow",
     "owner": "200527038829996354",
     "workflows": [
       {
         "script": {
-          "path": "devinTest14",
+          "path": "devinTest18",
           "runtime": {
             "command": "WORKFLOW"
           }
         },
-        "id": "5964953247496120150",
-        "name": "devinTest14",
+        "id": "8338195478667005112",
+        "name": "devinTest18",
         "owner": "200527038829996354",
         "dependencies": [
           {
-            "nodeId": "5234437421526858245",
+            "nodeId": "8164448124165869111",
             "depends": [
               {
                 "type": "Normal",
-                "output": "5520500898716667919",
+                "output": "7879732054051123384",
                 "refTableName": "startnode"
               }
             ]
@@ -31,11 +31,11 @@
         ],
         "nodes": [
           {
-            "id": "5520500898716667919",
+            "id": "7879732054051123384",
             "name": "startnode",
             "owner": "200527038829996354",
             "script": {
-              "path": "devinTest14/startnode",
+              "path": "devinTest18/startnode",
               "runtime": {
                 "command": "VIRTUAL",
                 "commandTypeId": 99,
@@ -44,11 +44,11 @@
             }
           },
           {
-            "id": "5234437421526858245",
+            "id": "8164448124165869111",
             "name": "sparksql1",
             "owner": "200527038829996354",
             "script": {
-              "path": "devinTest14/sparksql1",
+              "path": "devinTest18/sparksql1",
               "runtime": {
                 "command": "EMR_SPARK_SQL",
                 "commandTypeId": 229,
@@ -63,6 +63,6 @@
   "metadata": {
     "tenantId": "528666525984994",
     "projectId": "257880",
-    "uuid": "5964953247496120150"
+    "uuid": "8338195478667005112"
   }
 }
