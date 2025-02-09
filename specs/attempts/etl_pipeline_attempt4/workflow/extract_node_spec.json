@@ -1,0 +1,52 @@
+{
+  "version": "1.1.0",
+  "kind": "Node",
+  "spec": {
+    "nodes": [
+      {
+        "recurrence": "Normal",
+        "timeout": 0,
+        "instanceMode": "T+1",
+        "rerunMode": "Allowed",
+        "rerunTimes": 3,
+        "rerunInterval": 180000,
+        "datasource": {
+          "name": "w_f8e861d482983d5f",
+          "type": "emr"
+        },
+        "script": {
+          "language": "spark-sql",
+          "path": "etlDevinTest_1739061773/extract_node",
+          "runtime": {
+            "command": "EMR_SPARK_SQL",
+            "commandTypeId": 229,
+            "emrJobConfig": {
+              "priority": "1",
+              "ENABLE_SPARKSQL_JDBC": false,
+              "REUSE_SESSION": false,
+              "FLOW_SKIP_SQL_ANALYZE": false,
+              "queue": "default"
+            },
+            "cu": "0.25"
+          },
+          "content": "SELECT employee_id, name, department, salary INTO extracted_employees FROM employees;"
+        },
+        "name": "sparksql_insert",
+        "owner": "200527038829996354",
+        "metadata": {
+          "container": {
+            "type": "Flow",
+            "uuid": "7266747792320686851"
+          }
+        },
+        "dependencies": [
+          {
+            "type": "Normal",
+            "output": "6276357613341471282",
+            "refTableName": "startnode"
+          }
+        ]
+      }
+    ]
+  }
+}
