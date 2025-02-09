@@ -1,59 +1,75 @@
-# Working DataWorks Workflow Specifications
+# Workflow Creation Steps for devinTest20
 
-## Overview
-This directory contains the working specifications and commands for creating a DataWorks workflow with proper node dependencies.
-
-## Workflow Structure
-1. Create workflow first
-2. Create virtual start node with empty dependencies array
-3. Create Spark SQL node with dependencies to start node
-4. Verify workflow structure
-
-## Files
-- `workflow_spec.json`: Initial workflow creation spec
-- `start_node_spec.json`: Virtual start node spec with empty dependencies array
-- `spark_sql_node_spec.json`: Spark SQL node spec with dependencies to start node
-
-## Commands
+## 1. Create Workflow
 ```bash
-# 1. Create workflow
-aliyun dataworks-public \
---endpoint dataworks.cn-hangzhou.aliyuncs.com \
-CreateWorkflowDefinition \
---ProjectId 257880 \
---Spec "$(cat workflow_spec.json)"
+# Create workflow spec
+- Set workflow name: devinTest20
+- Set folder path: devinTest20
+- Create workflow using CreateWorkflowDefinition API
+- Got workflow ID: 6871644996502859841
 
-# 2. Create start node with empty dependencies array
-aliyun dataworks-public \
---endpoint dataworks.cn-hangzhou.aliyuncs.com \
-CreateNode \
---ProjectId 257880 \
---Scene "DataworksProject" \
---ContainerId "{workflow_id}" \
---Spec "$(cat start_node_spec.json)"
-
-# 3. Create Spark SQL node with dependencies to start node
-aliyun dataworks-public \
---endpoint dataworks.cn-hangzhou.aliyuncs.com \
-CreateNode \
---ProjectId 257880 \
---Scene "DataworksProject" \
---ContainerId "{workflow_id}" \
---Spec "$(cat spark_sql_node_spec.json)"
-
-# 4. Verify workflow
+# Verification
 aliyun dataworks-public \
 --endpoint dataworks.cn-hangzhou.aliyuncs.com \
 GetWorkflowDefinition \
 --ProjectId 257880 \
---Id "{workflow_id}" | jq '.WorkflowDefinition.Spec | fromjson | .spec.workflows[0]'
+--Id "6871644996502859841"
 ```
 
-## Important Notes
-1. Dependencies must be included during node creation
-2. Start node must have empty dependencies array
-3. Spark SQL node must include dependencies to start node
-4. Nodes must have proper container references in metadata
+## 2. Create Start Node
+```bash
+# Create start node spec
+- Set folder path: devinTest20/startnode
+- Set container reference: 6871644996502859841
+- Include empty dependencies array
+- Create node using CreateNode API
+- Got node ID: 9122088641725001535
+
+# Verification
+- Node created successfully
+- Container reference correct
+- Empty dependencies array set
+```
+
+## 3. Create Spark SQL Node
+```bash
+# Create Spark SQL node spec
+- Set folder path: devinTest20/sparksql1
+- Set container reference: 6871644996502859841
+- Include dependencies to start node (ID: 9122088641725001535)
+- Create node using CreateNode API
+- Got node ID: 5154584707877832313
+
+# Verification
+- Node created successfully
+- Container reference correct
+- Dependencies set to start node
+```
+
+## 4. Final Verification
+```bash
+# Verify workflow structure
+aliyun dataworks-public \
+--endpoint dataworks.cn-hangzhou.aliyuncs.com \
+GetWorkflowDefinition \
+--ProjectId 257880 \
+--Id "6871644996502859841"
+
+# Results
+- Both nodes present in nodes array
+- Container references correct
+- Dependencies not showing up in workflow verification
+```
+
+## Issues Found
+1. Dependencies set during node creation not showing up in workflow verification
+2. Need to investigate correct way to set dependencies using CreateNode API
+3. May need to update working_specs pattern with correct dependency configuration
+
+## Next Steps
+1. Create new workflow attempt following working_specs pattern exactly
+2. Verify dependencies after each step
+3. Update working_specs pattern with successful implementation
 
 ## API Limitations
 - "该接口不支持批量操作，若 FlowSpec 中定义了不止一个工作流，则除第一个以外的后续工作流均会被忽略" (The interface does not support batch operations. If FlowSpec defines more than one workflow, subsequent workflows after the first one will be ignored)
