@@ -1,0 +1,18 @@
+{
+  "Id": "39cb8718-efec-4b16-b4b2-f1e87402d334",
+  "Status": "Running",
+  "Stages": [
+    {
+      "Code": "BUILD_PACKAGE",
+      "Status": "Success"
+    },
+    {
+      "Code": "PROD_CHECK",
+      "Status": "Init"
+    },
+    {
+      "Code": "PROD",
+      "Status": "Init"
+    }
+  ]
+}

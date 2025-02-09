@@ -1,0 +1,21 @@
+{
+    "ProjectId": 257880,
+    "WorkflowId": 4613752925849225993,
+    "Name": "etlDevinTest_1739029400_run1",
+    "Type": "SupplementData",
+    "DefaultRunProperties": {
+        "Analysis": {
+            "Enabled": false,
+            "Blocked": false
+        },
+        "Parallelism": 1
+    },
+    "Periods": {
+        "BizDates": [
+            {
+                "StartBizDate": "2025-02-05",
+                "EndBizDate": "2025-02-06"
+            }
+        ]
+    }
+}

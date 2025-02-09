@@ -1,0 +1,6 @@
+{
+    "Description": "ETL Pipeline with Extract, Transform, Load nodes",
+    "ProjectId": 257880,
+    "Name": "etl_pipeline_deployment",
+    "FlowId": "{workflow_id}"
+}

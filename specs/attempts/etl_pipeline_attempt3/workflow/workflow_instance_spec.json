@@ -1,0 +1,22 @@
+{
+    "ProjectId": 257880,
+    "Name": "etlDevinTest1_run1",
+    "Type": "ManualWorkflow",
+    "EnvType": "Prod",
+    "WorkflowId": "8264496917250362898",
+    "DefaultRunProperties": {
+        "Analysis": {
+            "Enabled": false,
+            "Blocked": false
+        },
+        "Parallelism": 1,
+        "RuntimeResource": "Serverless_res_group_528666525984994_706350919895266",
+        "Mode": "AllDownstream",
+        "RootTaskIds": [7148347378185425991]
+    },
+    "AutoStartEnabled": true,
+    "BizdateIntervals": [{
+        "StartBizdate": "2025-02-05",
+        "EndBizdate": "2025-02-06"
+    }]
+}

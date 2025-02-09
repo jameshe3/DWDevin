@@ -1,0 +1,18 @@
+{
+  "Id": "923b8ee0-d52d-4013-9d22-b60e5e063443",
+  "Status": "Success",
+  "Stages": [
+    {
+      "Code": "BUILD_PACKAGE",
+      "Status": "Success"
+    },
+    {
+      "Code": "PROD_CHECK",
+      "Status": "Success"
+    },
+    {
+      "Code": "PROD",
+      "Status": "Success"
+    }
+  ]
+}

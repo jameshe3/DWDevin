@@ -1,0 +1,18 @@
+{
+    "version": "1.1.0",
+    "kind": "CycleWorkflow",
+    "spec": {
+        "name": "etlDevinTest",
+        "type": "CycleWorkflow",
+        "owner": "200527038829996354",
+        "workflows": [{
+            "script": {"path": "etlDevinTest"},
+            "name": "etlDevinTest",
+            "owner": "200527038829996354"
+        }]
+    },
+    "metadata": {
+        "tenantId": "528666525984994",
+        "projectId": "257880"
+    }
+}

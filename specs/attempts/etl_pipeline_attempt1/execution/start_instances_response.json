@@ -1,0 +1,12 @@
+{
+	"RequestId": "4CDC4DF2-3374-54EE-AF64-233C7B1E796C",
+	"SuccessInfo": {
+		"1000341555642": {
+			"Success": true
+		},
+		"1000341555646": {
+			"Message": "Because of parallelism config, wait for parent workflowInstance[1000341555642] to finish",
+			"Success": false
+		}
+	}
+}

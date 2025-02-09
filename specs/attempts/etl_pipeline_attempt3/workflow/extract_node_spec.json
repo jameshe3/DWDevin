@@ -1,0 +1,52 @@
+{
+    "version": "1.1.0",
+    "kind": "Node",
+    "spec": {
+        "nodes": [
+            {
+                "recurrence": "Normal",
+                "timeout": 0,
+                "instanceMode": "T+1",
+                "rerunMode": "Allowed",
+                "rerunTimes": 3,
+                "rerunInterval": 180000,
+                "datasource": {
+                    "name": "w_f8e861d482983d5f",
+                    "type": "emr"
+                },
+                "script": {
+                    "language": "spark-sql",
+                    "path": "etlDevinTest1/extract_node",
+                    "runtime": {
+                        "command": "EMR_SPARK_SQL",
+                        "commandTypeId": 229,
+                        "emrJobConfig": {
+                            "priority": "1",
+                            "ENABLE_SPARKSQL_JDBC": false,
+                            "REUSE_SESSION": false,
+                            "FLOW_SKIP_SQL_ANALYZE": false,
+                            "queue": "default"
+                        },
+                        "cu": "0.25"
+                    },
+                    "content": "--EMR Spark SQL\n--********************************************************************--\n--author: 荆杭\n--create time: 2025-02-09 07:44:25\n--EMR任务只能运行在独享资源组上\n--********************************************************************--\nSELECT employee_id, name, department, salary INTO extracted_employees FROM employees;"
+                },
+                "name": "extract_node",
+                "owner": "200527038829996354",
+                "metadata": {
+                    "container": {
+                        "type": "Flow",
+                        "uuid": "8264496917250362898"
+                    }
+                },
+                "dependencies": [
+                    {
+                        "type": "Normal",
+                        "output": "7148347378185425991",
+                        "refTableName": "startnode"
+                    }
+                ]
+            }
+        ]
+    }
+}

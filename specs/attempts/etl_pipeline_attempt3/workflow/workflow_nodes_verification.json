@@ -1,0 +1,32 @@
+{
+  "name": "extract_node",
+  "id": "6075744335966809526",
+  "metadata": {
+    "type": "Flow",
+    "uuid": "8264496917250362898"
+  }
+}
+{
+  "name": "startnode",
+  "id": "7148347378185425991",
+  "metadata": {
+    "type": "Flow",
+    "uuid": "8264496917250362898"
+  }
+}
+{
+  "name": "transform_node",
+  "id": "8260871458186937927",
+  "metadata": {
+    "type": "Flow",
+    "uuid": "8264496917250362898"
+  }
+}
+{
+  "name": "load_node",
+  "id": "8895410645212838880",
+  "metadata": {
+    "type": "Flow",
+    "uuid": "8264496917250362898"
+  }
+}
