@@ -2,13 +2,13 @@
   "version": "1.1.0",
   "kind": "CycleWorkflow",
   "spec": {
-    "name": "devinTest19",
+    "name": "devinTest20",
     "type": "CycleWorkflow",
     "owner": "200527038829996354",
     "workflows": [
       {
         "script": {
-          "path": "devinTest19",
+          "path": "devinTest20",
           "runtime": {
             "command": "WORKFLOW"
           }
@@ -30,7 +30,7 @@
           "failureStrategy": "Break",
           "recurrenceType": "Normal"
         },
-        "name": "devinTest19",
+        "name": "devinTest20",
         "owner": "200527038829996354"
       }
     ]
