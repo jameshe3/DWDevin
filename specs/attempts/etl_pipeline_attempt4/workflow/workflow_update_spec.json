@@ -1,0 +1,60 @@
+{
+  "version": "1.1.0",
+  "kind": "CycleWorkflow",
+  "spec": {
+    "name": "etlDevinTest_1739061773",
+    "id": "7266747792320686851",
+    "type": "CycleWorkflow",
+    "owner": "200527038829996354",
+    "workflows": [
+      {
+        "script": {
+          "path": "etlDevinTest_1739061773",
+          "runtime": {
+            "command": "WORKFLOW"
+          }
+        },
+        "id": "7266747792320686851",
+        "name": "etlDevinTest_1739061773",
+        "owner": "200527038829996354",
+        "dependencies": [
+          {
+            "nodeId": "7919814880001602779",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "6276357613341471282",
+                "refTableName": "startnode"
+              }
+            ]
+          },
+          {
+            "nodeId": "7599700874636704569",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "7919814880001602779",
+                "refTableName": "extract_node"
+              }
+            ]
+          },
+          {
+            "nodeId": "5886849126339524755",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "7599700874636704569",
+                "refTableName": "transform_node"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "tenantId": "528666525984994",
+    "projectId": "257880",
+    "uuid": "7266747792320686851"
+  }
+}
