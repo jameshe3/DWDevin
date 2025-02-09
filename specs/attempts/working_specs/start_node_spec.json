@@ -11,7 +11,7 @@
         "rerunTimes": 3,
         "rerunInterval": 180000,
         "script": {
-          "path": "devinTest14/startnode",
+          "path": "devinTest19/startnode",
           "runtime": {
             "command": "VIRTUAL",
             "commandTypeId": 99,
@@ -23,9 +23,10 @@
         "metadata": {
           "container": {
             "type": "Flow",
-            "uuid": "5964953247496120000"
+            "uuid": "9036811510265347508"
           }
-        }
+        },
+        "dependencies": []
       }
     ]
   }

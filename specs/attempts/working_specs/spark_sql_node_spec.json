@@ -16,7 +16,7 @@
         },
         "script": {
           "language": "spark-sql",
-          "path": "devinTest14/sparksql1",
+          "path": "devinTest19/sparksql1",
           "runtime": {
             "command": "EMR_SPARK_SQL",
             "commandTypeId": 229,
@@ -29,20 +29,20 @@
             },
             "cu": "0.25"
           },
-          "content": "INSERT INTO employees VALUES (19, 'John Doe', 'Engineering', 75000.0);"
+          "content": "SELECT 1;"
         },
         "name": "sparksql1",
         "owner": "200527038829996354",
         "metadata": {
           "container": {
             "type": "Flow",
-            "uuid": "5964953247496120000"
+            "uuid": "9036811510265347508"
           }
         },
         "dependencies": [
           {
             "type": "Normal",
-            "output": "5520500898716668000",
+            "output": "6456790251003374489",
             "refTableName": "startnode"
           }
         ]
