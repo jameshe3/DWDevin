@@ -1,40 +1,60 @@
 {
-    "version": "1.1.0",
-    "kind": "CycleWorkflow",
-    "spec": {
-        "name": "devinTestSparkSQL18",
-        "id": "{workflow_id}",
-        "type": "CycleWorkflow",
+  "version": "1.1.0",
+  "kind": "CycleWorkflow",
+  "spec": {
+    "name": "etlDevinTest_1739063594",
+    "id": "6718061212844606883",
+    "type": "CycleWorkflow",
+    "owner": "200527038829996354",
+    "workflows": [
+      {
+        "script": {
+          "path": "etlDevinTest_1739063594",
+          "runtime": {
+            "command": "WORKFLOW"
+          }
+        },
+        "id": "6718061212844606883",
+        "name": "etlDevinTest_1739063594",
         "owner": "200527038829996354",
-        "workflows": [
-            {
-                "script": {
-                    "path": "devinTestSparkSQL18",
-                    "runtime": {
-                        "command": "WORKFLOW"
-                    }
-                },
-                "id": "{workflow_id}",
-                "name": "devinTestSparkSQL18",
-                "owner": "200527038829996354",
-                "dependencies": [
-                    {
-                        "nodeId": "{spark_sql_node_id}",
-                        "depends": [
-                            {
-                                "type": "Normal",
-                                "output": "{start_node_id}",
-                                "refTableName": "startnode"
-                            }
-                        ]
-                    }
-                ]
-            }
+        "dependencies": [
+          {
+            "nodeId": "7697191108369432301",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "7048089458632665674",
+                "refTableName": "startnode"
+              }
+            ]
+          },
+          {
+            "nodeId": "6192209731460953039",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "7697191108369432301",
+                "refTableName": "extract_node"
+              }
+            ]
+          },
+          {
+            "nodeId": "9107318370760107882",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "6192209731460953039",
+                "refTableName": "transform_node"
+              }
+            ]
+          }
         ]
-    },
-    "metadata": {
-        "tenantId": "528666525984994",
-        "projectId": "257880",
-        "uuid": "{workflow_id}"
-    }
+      }
+    ]
+  },
+  "metadata": {
+    "tenantId": "528666525984994",
+    "projectId": "257880",
+    "uuid": "6718061212844606883"
+  }
 }
