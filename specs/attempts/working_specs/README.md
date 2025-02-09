@@ -18,7 +18,7 @@ This directory contains the working specifications and commands for creating a D
 ## Commands
 ```bash
 # 1. Create workflow
-aliyun dataworks-public ImportWorkflowDefinition \
+aliyun dataworks-public CreateWorkflowDefinition \
 --ProjectId 257880 \
 --Spec "$(cat workflow_spec.json)"
 
