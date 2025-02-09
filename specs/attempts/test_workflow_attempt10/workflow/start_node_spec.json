@@ -1,0 +1,32 @@
+{
+  "version": "1.1.0",
+  "kind": "Node",
+  "spec": {
+    "nodes": [
+      {
+        "recurrence": "Normal",
+        "timeout": 0,
+        "instanceMode": "T+1",
+        "rerunMode": "Allowed",
+        "rerunTimes": 3,
+        "rerunInterval": 180000,
+        "script": {
+          "path": "业务流程/devinTest4/startnode",
+          "runtime": {
+            "command": "VIRTUAL",
+            "commandTypeId": 99,
+            "cu": "0"
+          }
+        },
+        "name": "startnode",
+        "owner": "200527038829996354",
+        "metadata": {
+          "container": {
+            "type": "Flow",
+            "uuid": "9145796099234193071"
+          }
+        }
+      }
+    ]
+  }
+}
