@@ -1,0 +1,68 @@
+{
+  "version": "1.1.0",
+  "kind": "CycleWorkflow",
+  "spec": {
+    "name": "devinTest13",
+    "id": "6418018527767581623",
+    "type": "CycleWorkflow",
+    "owner": "200527038829996354",
+    "workflows": [
+      {
+        "script": {
+          "path": "devinTest13",
+          "runtime": {
+            "command": "WORKFLOW"
+          }
+        },
+        "id": "6418018527767581623",
+        "name": "devinTest13",
+        "owner": "200527038829996354",
+        "dependencies": [
+          {
+            "nodeId": "4614758641530931263",
+            "depends": [
+              {
+                "type": "Normal",
+                "output": "5429535374757735197",
+                "refTableName": "startnode"
+              }
+            ]
+          }
+        ],
+        "nodes": [
+          {
+            "id": "5429535374757735197",
+            "name": "startnode",
+            "owner": "200527038829996354",
+            "script": {
+              "path": "devinTest13/startnode",
+              "runtime": {
+                "command": "VIRTUAL",
+                "commandTypeId": 99,
+                "cu": "0"
+              }
+            }
+          },
+          {
+            "id": "4614758641530931263",
+            "name": "sparksql1",
+            "owner": "200527038829996354",
+            "script": {
+              "path": "devinTest13/sparksql1",
+              "runtime": {
+                "command": "EMR_SPARK_SQL",
+                "commandTypeId": 229,
+                "cu": "0.25"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "metadata": {
+    "tenantId": "528666525984994",
+    "projectId": "257880",
+    "uuid": "6418018527767581623"
+  }
+}

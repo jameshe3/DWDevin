@@ -1,0 +1,52 @@
+{
+  "version": "1.1.0",
+  "kind": "Node",
+  "spec": {
+    "nodes": [
+      {
+        "recurrence": "Normal",
+        "timeout": 0,
+        "instanceMode": "T+1",
+        "rerunMode": "Allowed",
+        "rerunTimes": 3,
+        "rerunInterval": 180000,
+        "datasource": {
+          "name": "w_f8e861d482983d5f",
+          "type": "emr"
+        },
+        "script": {
+          "language": "spark-sql",
+          "path": "devinTestSparkSQL22/sparksql1",
+          "runtime": {
+            "command": "EMR_SPARK_SQL",
+            "commandTypeId": 229,
+            "emrJobConfig": {
+              "priority": "1",
+              "ENABLE_SPARKSQL_JDBC": false,
+              "REUSE_SESSION": false,
+              "FLOW_SKIP_SQL_ANALYZE": false,
+              "queue": "default"
+            },
+            "cu": "0.25"
+          },
+          "content": "INSERT INTO employees VALUES (19, 'John Doe', 'Engineering', 75000.0);"
+        },
+        "name": "sparksql1",
+        "owner": "200527038829996354",
+        "metadata": {
+          "container": {
+            "type": "Flow",
+            "uuid": "6220645158435186717"
+          }
+        },
+        "dependencies": [
+          {
+            "type": "Normal",
+            "output": "",
+            "refTableName": "startnode"
+          }
+        ]
+      }
+    ]
+  }
+}
