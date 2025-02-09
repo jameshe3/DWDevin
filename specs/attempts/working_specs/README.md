@@ -18,31 +18,41 @@ This directory contains the working specifications and commands for creating a D
 ## Commands
 ```bash
 # 1. Create workflow
-aliyun dataworks-public CreateWorkflowDefinition \
+aliyun dataworks-public \
+--endpoint dataworks.cn-hangzhou.aliyuncs.com \
+CreateWorkflowDefinition \
 --ProjectId 257880 \
 --Spec "$(cat workflow_spec.json)"
 
 # 2. Create start node
-aliyun dataworks-public CreateNode \
+aliyun dataworks-public \
+--endpoint dataworks.cn-hangzhou.aliyuncs.com \
+CreateNode \
 --ProjectId 257880 \
 --Scene "DataworksProject" \
 --ContainerId "{workflow_id}" \
 --Spec "$(cat start_node_spec.json)"
 
 # 3. Create Spark SQL node
-aliyun dataworks-public CreateNode \
+aliyun dataworks-public \
+--endpoint dataworks.cn-hangzhou.aliyuncs.com \
+CreateNode \
 --ProjectId 257880 \
 --Scene "DataworksProject" \
 --ContainerId "{workflow_id}" \
 --Spec "$(cat spark_sql_node_spec.json)"
 
 # 4. Update workflow with dependencies
-aliyun dataworks-public ImportWorkflowDefinition \
+aliyun dataworks-public \
+--endpoint dataworks.cn-hangzhou.aliyuncs.com \
+ImportWorkflowDefinition \
 --ProjectId 257880 \
 --Spec "$(cat workflow_update_spec.json)"
 
 # 5. Verify workflow
-aliyun dataworks-public GetWorkflowDefinition \
+aliyun dataworks-public \
+--endpoint dataworks.cn-hangzhou.aliyuncs.com \
+GetWorkflowDefinition \
 --ProjectId 257880 \
 --Id "{workflow_id}" | jq '.WorkflowDefinition.Spec | fromjson | .spec.workflows[0]'
 ```
