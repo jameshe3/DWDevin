@@ -31,7 +31,7 @@
           },
           "content": "SELECT employee_id, name, department, salary INTO extracted_employees FROM employees;"
         },
-        "name": "sparksql_insert",
+        "name": "extract_node",
         "owner": "200527038829996354",
         "metadata": {
           "container": {
