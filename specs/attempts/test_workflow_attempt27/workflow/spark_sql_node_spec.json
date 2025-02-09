@@ -16,7 +16,7 @@
         },
         "script": {
           "language": "spark-sql",
-          "path": "devinTest19/sparksql1",
+          "path": "devinTest20/sparksql1",
           "runtime": {
             "command": "EMR_SPARK_SQL",
             "commandTypeId": 229,
@@ -36,13 +36,13 @@
         "metadata": {
           "container": {
             "type": "Flow",
-            "uuid": "9036811510265347508"
+            "uuid": "6871644996502859841"
           }
         },
         "dependencies": [
           {
             "type": "Normal",
-            "output": "6456790251003374489",
+            "output": "9122088641725001535",
             "refTableName": "startnode"
           }
         ]
