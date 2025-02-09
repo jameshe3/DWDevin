@@ -1,0 +1,68 @@
+{
+    "version": "1.1.0",
+    "kind": "CycleWorkflow",
+    "spec": {
+        "name": "devinTest16",
+        "id": "5593932195034359474",
+        "type": "CycleWorkflow",
+        "owner": "200527038829996354",
+        "workflows": [
+            {
+                "script": {
+                    "path": "devinTest16",
+                    "runtime": {
+                        "command": "WORKFLOW"
+                    }
+                },
+                "id": "5593932195034359474",
+                "name": "devinTest16",
+                "owner": "200527038829996354",
+                "nodes": [
+                    {
+                        "id": "5189853381087529964",
+                        "name": "startnode",
+                        "owner": "200527038829996354",
+                        "script": {
+                            "path": "devinTest16/startnode",
+                            "runtime": {
+                                "command": "VIRTUAL",
+                                "commandTypeId": 99,
+                                "cu": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "5316064020138376703",
+                        "name": "sparksql1",
+                        "owner": "200527038829996354",
+                        "script": {
+                            "path": "devinTest16/sparksql1",
+                            "runtime": {
+                                "command": "EMR_SPARK_SQL",
+                                "commandTypeId": 229,
+                                "cu": "0.25"
+                            }
+                        }
+                    }
+                ],
+                "dependencies": [
+                    {
+                        "nodeId": "5316064020138376703",
+                        "depends": [
+                            {
+                                "type": "Normal",
+                                "output": "5189853381087529964",
+                                "refTableName": "startnode"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "metadata": {
+        "tenantId": "528666525984994",
+        "projectId": "257880",
+        "uuid": "5593932195034359474"
+    }
+}
