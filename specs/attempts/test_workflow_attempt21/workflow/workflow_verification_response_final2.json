@@ -1,0 +1,74 @@
+{
+  "script": {
+    "path": "devinTest14",
+    "runtime": {
+      "command": "WORKFLOW"
+    },
+    "id": "8970112992011059584"
+  },
+  "id": "5964953247496120150",
+  "trigger": {
+    "type": "Scheduler",
+    "id": "7792023109087321977",
+    "cron": "00 00 00 * * ?",
+    "startTime": "1970-01-01 00:00:00",
+    "endTime": "9999-01-01 00:00:00",
+    "timezone": "Asia/Shanghai",
+    "delaySeconds": 0
+  },
+  "strategy": {
+    "timeout": 0,
+    "instanceMode": "T+1",
+    "rerunMode": "Allowed",
+    "rerunTimes": 3,
+    "rerunInterval": 180000,
+    "failureStrategy": "Break",
+    "recurrenceType": "Normal"
+  },
+  "name": "devinTest14",
+  "owner": "200527038829996354",
+  "citable": false,
+  "metadata": {
+    "owner": "200527038829996354",
+    "ownerName": "荆杭",
+    "tenantId": "528666525984994",
+    "project": {
+      "defaultDiResourceGroupIdentifier": "group_528666525984994",
+      "mode": "SIMPLE",
+      "projectId": "257880",
+      "projectIdentifier": "devin2",
+      "projectName": "devin2",
+      "projectOwnerId": "1048137137522297",
+      "properties": {
+        "enableChangeNodeOwner": true,
+        "enableScheduler": true,
+        "operator": "200527038829996354"
+      },
+      "schedulerMaxRetryTimes": 3,
+      "schedulerRetryInterval": 120000,
+      "securityInfo": "{\"isAllowDownload\":1}",
+      "simple": true,
+      "tenantId": "528666525984994"
+    },
+    "projectId": "257880"
+  },
+  "inputs": {},
+  "outputs": {
+    "nodeOutputs": [
+      {
+        "data": "5964953247496120150",
+        "artifactType": "NodeOutput",
+        "refTableName": "devinTest14",
+        "isDefault": true
+      },
+      {
+        "data": "devin2.devinTest14",
+        "artifactType": "NodeOutput",
+        "refTableName": "devinTest14",
+        "isDefault": false
+      }
+    ]
+  },
+  "nodes": [],
+  "dependencies": []
+}
